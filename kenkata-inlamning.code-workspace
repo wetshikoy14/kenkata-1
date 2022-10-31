@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../inlämningsuppgift/kenkata-inlämning/kenkata-inlamning"
+		},
+		{
+			"path": "../../../../Users/dogosson/html-css/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "kenkata-inlamning",
+		"liveServer.settings.port": 5501
+	}
+}

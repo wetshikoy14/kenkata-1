@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tutorial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <script src= "https://kit.fontawesome.com/41c8b474e2.js"  crossorigin= "anonymous" ></script> 
+    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin= "anonymous"  >
+    <link href="css/style.css"  rel= "stylesheet" > 
+</head>
+<body>
+
+    <header class="header ">
+        <div class="top-menu  ">
+            <div class="container">
+                <div>
+                    <div class="dropdown ">
+                        <button id="languages ">ENG</button><i class="fa-regular fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                          <a href="#">ENG</a>
+                          <a href="#">SWE</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button id="currencies ">EUR</button><i class="fa-regular fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                          <a href="#">EUR</a>
+                          <a href="#">SEK</a>
+                          <a href="#">USD</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="menu-links ">
+                    <div class="links ">
+                       <a href="#">Newsletter</a>
+                       <a href="#">Contact us</a>
+                       <a href="#">FAQs</a>   
+                    </div>
+                    <span class="social-media ">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu ">
+            <div class="container">
+                <div class="brand  ">
+                    <a href="index.html"><img src="images/kentLogo.svg" alt="kenkata"></a>
+                </div>
+                <div class="input-group">
+                    <div class="form-outline">
+                      <input type="search" id="form1" class="form-control" />
+                      <label class="form-label" for="form1">Search products...</label>
+                    </div>
+                    <button type="button" id="searchButton" class="btn bg-theme">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                <div class="links">
+                    <a class="link" href="account.html"><i class="fa-thin fa-user me-2"></i>My account</a>
+                    <a class="link"href="#"><i class="fa-light fa-heart me-2"></i></a>
+                    <a id="shuffle" class="link" href="#"> <i class="fa-regular fa-shuffle me-2"></i></a>
+                    <a id="cart" class="link" href="#">
+                        <span class=" badge rounded-pill bg-theme">99+</span>
+                        <i class="fa-light fa-bag-shopping me-2"></i>
+                        <span >€9999.00</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <nav class="menu-container ">
+                    <div class="dropdown-browse">
+                        <button class="dropdow-categories ">
+                            <i class="fa-solid fa-bars me-3"></i>
+                            <a class="categories me-4" href=""> Browse Categories</a><i class="fa-regular fa-chevron-down"></i>
+                        </button>  
+                        <div class="dropdown-content">
+                            <div class="content">
+                                <div class="menu-by-catergory">
+                                  <p >SHOP BY CATEGORY</p>
+                                  <a href="#"> Men </a>
+                                  <a href="#">Women</a> 
+                                  <a href="#">Kids</a> 
+                                  <a href="#">Shoes</a> 
+                                  <div style="width: 100%; height: 18px; border-bottom: 1px solid white; text-align: center; "></div>
+                                  <a href="index.html">Home</a>  
+                                </div>
+                                
+
+
+                            </div>
+                            
+                          </div>
+                    </div>
+                    <div class="special-offer">
+                        <button class= "offer-button">
+                            <a href="">Special offer</a>
+                        </button>
+                        
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+    <section class="site-title">
+        <div class="container"> 
+              <h1>my account</h1>  
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li >My Account</li>
+                </ul>
+        </div>
+    </section>
+    <section class="signup-signin ">
+        <div class="container ">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h1 class="card-title mb-3">LOGIN</h1>
+                    <form id="signinForm">
+                        <div class="mb-3">
+                            <label for="e-post"> Email address<span class="required">*</span></label>
+                            <input id="email"  type="email" required> 
+                        </div>
+                        <div class="mb-4">
+                            <label for="password"> Password <span class="required">*</span></label>
+                            <input id="password"  type="password" required> 
+                        </div>
+
+                    </form>
+                    <div class="mb-4 d-grid">
+                        <button type="submit" class="btn btn-lg bg-theme">LOG IN</button>
+                        <div class=" lost-password d-flex justify-content-between align-items-center mt-4">
+                           <div>
+                              <input type="checkbox" id="rememberMe" name="rememberMe">
+                              <label id="rememberMe" for="rememberMe ">Remember me</label><br>
+                           </div>
+                           <a class="lost-password" href="">Lost your password?</a>
+                        </div> 
+                    </div>
+                    <div class=" login-with mb-4">
+                        <div style="width: 100%; height: 18px; border-bottom: 1px solid #777777; text-align: center; ">
+                            <span style="font-size: 16px; background-color: #F3F5F6;  position: relative; top: 0.3rem; padding: 0 1rem 0 1rem ; ">
+                              OR LOGIN WITH
+                            </span>
+                          </div> 
+                    </div>
+                    <div class="d-flex gap-2 justify-content-between">
+                        <div class="login-with-facebook">
+                            <img src="images/Facebook.svg" alt="">
+                            <a href="">Facebook</a>
+                        </div>
+                        <div class="login-with-google">
+                            <img src="images/Google-icon.svg" alt="">
+                            <a href="">Google</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">REGISTER</h1>
+                    <p class="card-text text-small">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
+
+                    <form id="signupForm">
+                        <div class="mb-4">
+                            <label for="signup_firstname"> Firstname <span class="required">*</span></label>
+                            <input id="signup_firstname" value="dogosson" type="text" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="signup_lastname"> Lastname <span class="required">*</span></label>
+                            <input id="signup_lastname" value="dogosson" type="text" required>
+                
+                        </div>
+                        <div class="mb-4">
+                            <label for="signup_e-post"> Email address<span class="required">*</span></label>
+                            <input id="signup_email"  type="email" required> 
+                        </div>
+                        <div class="mb-4">
+                            <label for="signup_password"> Password <span class="required">*</span></label>
+                            <input id="signup_password"  type="password" required> 
+                        </div>
+
+                    </form>
+
+                    <p class="card-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our  <a href="">privacy policy</a></p> 
+                    
+                    <div class="mb-3 d-grid">
+                        <button type="submit" class="btn btn-lg bg-theme">REGISTER</button> 
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div>
+       
+    </div>
